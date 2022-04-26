@@ -23,6 +23,9 @@ jobs:
       
       - name: Session info
         run: Rscript -e 'sessionInfo()'
+        
+      - name: Set up pandoc
+        uses: r-lib/actions/setup-pandoc@v2
       
       - name: Install remote packages
         run: |
